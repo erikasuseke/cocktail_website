@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/modal.css">
+</head>
+
+<body>
+
+    <main>
+        <nav>
+            <h1><i class="fa-solid fa-martini-glass-citrus"></i> DrinkList</h1>
+            <h5>For exquisite taste</h5>
+        </nav>
+
+        <div class="hero">
+            <h1><b style="color: #d46803">Drinks</b> list</h1>
+        </div>
+
+        <div class="mainContainer">
+            <div class="wrap">
+                <div class="drinkCategory">
+                    <select class="drinkSelection">
+
+                    </select>
+                </div>
+
+                <div class="search">
+                    <input type="text" class="searchTerm" placeholder="Search..." oninput="filterCocktails()">
+                    <button type="submit" class="searchButton" onclick="filterCocktails()">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+                <div class="randomDrink">
+                    <button class="randomDrink-btn">Suggest me a drink!</button>
+                </div>
+            </div>
+
+            <div class="cards-container">
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Modalinis langas -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modalRecipeContent">
+                <div class="modal-card">
+                    <img src="https://www.thecocktaildb.com/images/media/drink/rrtssw1472668972.jpg" alt="">
+                    <div class="modal-card-descr">
+                        <h4><b>Title1</b></h4>
+                        <p>Description</p>
+                        <p>Ingredients</p>
+                        <p>Recipe</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ecc4adc2aa.js" crossorigin="anonymous"></script>
+    <script src="/categoryFilter.js"></script>
+    <script src="/modal.js"></script>
+    <script src="/htmlGeneration.js"></script>
+    <script src="random.js"></script>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+    <script src="filter.js"></script>
+</body>
+
+</html>

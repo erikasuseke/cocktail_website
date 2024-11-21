@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(43, 43, 43);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #f0f0f0;
+    display: block;
+    margin: auto;
+}
+
+main {
+    margin: auto;
+}
+
+h4 {
+    color: #A4605A;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+
+.base-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 330px;
+    height: 450px;
+    perspective: 1000px;
+    margin: 20px;
+}
+
+.flip-card:hover .base-container {
+    transform: rotateY(180deg);
+}
+
+.item-card,
+.item-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.item-card {
+    background-color: #ffffff;
+}
+
+.item-card-back {
+    color: rgb(233, 233, 233);
+    transform: rotateY(180deg);
+    padding: 20px;
+    background-color: rgb(43, 43, 43);
+    overflow: auto;
+}
+
+.container {
+    padding: 2px 16px;
+}
+
+h1 {
+    padding: 20px 150px 5px 10px;
+    margin: 20px 0 0 0;
+}
+
+h5 {
+    padding: 0 0 0 60px;
+    margin: 0 0 20px 0;
+
+}
+
+img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.search {
+    width: 300px;
+    display: flex;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid rgb(43, 43, 43);
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid rgb(43, 43, 43);
+    background: rgb(43, 43, 43);
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.searchButton:hover {
+    color: #A4605A;
+}
+
+.wrap {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    margin-top: 50px;
+    padding-right: 80px;
+    gap: 10px;
+}
+
+select {
+    border: 3px solid rgb(43, 43, 43);
+    border-radius: 5px;
+    height: 36px;
+    width: 200px;
+    padding: 5px;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.randomDrink-btn {
+    border: none;
+    border-radius: 5px;
+    height: 36px;
+    width: 200px;
+    background-color: rgb(43, 43, 43);
+    color: #f0f0f0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.randomDrink-btn:hover {
+    background-color: #A4605A;
+}
+
+.ingredients,
+.recipe {
+    color: #A4605A;
+}
+
+.hero {
+    box-shadow: 0 15px 30px 1px grey;
+    background: rgba(255, 255, 255, 0.90);
+    text-align: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 5em auto;
+    height: 500px;
+    width: 800px;
+    padding: 20px;
+
+    h4 {
+        font-size: 30px;
+        margin-top: 0;
+        text-align: center;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 50px;
+    }
+
+    .drinkOfTheMonthDescr {
+        position: relative;
+        text-align: left;
+        overflow: hidden;
+        padding: 30px;
+        height: 100%;
+        float: left;
+        width: 40%;
+    }
+
+    h2 {
+        display: inline-block;
+        position: relative;
+        font-size: 30px;
+        color: rgb(43, 43, 43);
+        margin: 0;
+    }
+
+    .drinkOfTheMonthCard .drinkOfTheMonthDescr>p {
+        font-family: 'EB Garamond', serif;
+        text-align: center;
+        font-size: 18px;
+        color: #7d7d7d;
+    }
+
+    .imageBox {
+        transition: all 0.3s ease-out;
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        height: 100%;
+        float: none;
+        width: 50%;
+        display: inline-block;
+        margin-top: 20px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            border-radius: 3px;
+        }
+    }
+}
+
+.mainContainer,
+nav {
+    display: block;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+}
