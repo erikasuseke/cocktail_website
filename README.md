@@ -1,6 +1,8 @@
 # Cocktail website
 
-Studies project that includes:
+Studies project in which we had to use API to fetch data dynamically.
+
+Main functions:
 - Getting items from API and displaying them on website;
 - Generating random item from API;
 - Displaying list by category;
